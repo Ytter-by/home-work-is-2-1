@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Расчет стоимости ремонта</title>
+    <script src="app.js"></script>
+</head>
+<body>
+    <h1>Расчет стоимости ремонта</h1>
+    <label for="work-select">Вид работы:</label>
+    <select id="work-select">
+        <option value="Укладка плитки">Укладка плитки</option>
+        <option value="Штукатурка стен">Штукатурка стен</option>
+        <option value="Установка сантехники">Установка сантехники</option>
+        <option value="Электромонтаж">Электромонтаж</option>
+        <option value="Покраска">Покраска</option>
+    </select><br><br>
+    <label for="quantity">Количество работ:</label>
+    <input type="number" id="quantity"><br><br>
+    <label for="cost">Стоимость одной работы:</label>
+    <input type="number" id="cost"><br><br>
+    <button onclick="addWork()">Добавить работу</button><br><br>
+    <div id="works"></div>
+    <button onclick="calculateTotal()">Рассчитать стоимость</button>
+    <div id="total"></div>
+</body>
+</html>
