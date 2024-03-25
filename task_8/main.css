@@ -1,0 +1,52 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --color_green:#069406 ;
+    --color_blue: #0004ff;
+    --color_red: #ff0000 ;
+    --font-sans: sans-serif;
+}
+
+body {
+    font-family: var(--font-sans) ;
+}
+
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid;
+  }
+  
+    button {
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 25px; 
+    background-color: var(--color_green);   
+  }
+  
+  .card {
+    margin-top: 20px;
+    padding: 10px;
+
+}
+  
+  .card.green {
+    background-color: var(--color_green);
+    border-radius: 20px;
+}
+  
+  .card.blue {
+    background-color: var(--color_blue);
+    border-radius: 20px;
+}
+  
+  .card.red {
+    background-color: var(--color_red);
+    border-radius: 20px;
+  }

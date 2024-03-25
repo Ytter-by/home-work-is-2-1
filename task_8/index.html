@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Карточки встреч</title>
+<link rel="stylesheet" href="main.css">
+<script defer src="app.js"></script>
+</head>
+<body>
+<div class="container">
+  <h1>Добавить встречу</h1>
+  <input onchange="checkInput()" type="text" id="meetingTitle" placeholder="Название встречи">
+  <input onchange="checkInput()" type="text" id="meetingPlace" placeholder="Место проведения">
+  <input onchange="checkInput()" type="datetime-local" id="meetingTime" placeholder="Время проведения">
+  <textarea onchange="checkInput()" id="meetingDescription" placeholder="Описание"></textarea>
+  <input onchange="checkInput()" type="text" id="meetingParticipants" placeholder="Участники">
+  <button onclick="addTask()" id="addMeetingBtn" disabled>Добавить встречу</button>
+</div>
+<div id="meetingsContainer" class="container"></div>
+</body>
+</html>
